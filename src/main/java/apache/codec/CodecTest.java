@@ -1,4 +1,4 @@
-package codec;
+package apache.codec;
 
 import org.apache.commons.codec.binary.Hex;
 

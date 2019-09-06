@@ -1,5 +1,6 @@
-package httpclient;
+package apache.httpclient;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -9,8 +10,23 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 
+@Slf4j
 public class Httpclient {
     public static void main(String[] args) {
+        doGet();
+    }
+
+    public void doPost() {
+        try {
+
+
+
+        } catch (Exception e) {
+            log.error("发送请求失败", e);
+        }
+    }
+
+    public static void doGet() {
         try {
             //创建client实例
             HttpClient client= HttpClients.createDefault();
@@ -26,7 +42,8 @@ public class Httpclient {
             System.out.println(web);
 
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("发送请求失败", e);
         }
     }
+
 }

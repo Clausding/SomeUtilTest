@@ -10,9 +10,16 @@ import tools.beans.ShoppingCart;
 import java.util.List;
 
 @Slf4j
-public class FastJson {
+public class FastJsonTest {
     public static void main(String[] args) {
         parseObject2();
+    }
+
+    /**
+     * 向json对象中加入属性，而无需先将其转换为对象
+     */
+    static void addAttribute() {
+
     }
 
     /**
